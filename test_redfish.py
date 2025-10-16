@@ -56,13 +56,6 @@ class TestRedfishAPI:
         assert data is not None
         print(f"\nThermal Response: {data}")
 
-    def test_cpu_temperature_normal(self, redfish_service):
-        """Тест на соответствие температуры CPU норме"""
-        response = redfish_service.get_thermal_info()
-        data = response.json()
-        
-        print("Температурные датчики не найдены, тест пройден на базовом уровне")
-        assert True
 
     def test_get_processors_info(self, redfish_service):
         """Тест получения информации о процессорах"""
