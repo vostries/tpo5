@@ -6,4 +6,4 @@
 
 ## Запуск тестов
 
-python -m pytest src/test_redfish.py -v
+python3 -m pytest test_redfish.py -v
